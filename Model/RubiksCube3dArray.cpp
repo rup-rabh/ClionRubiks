@@ -237,4 +237,40 @@ public:
         return *this;
     }
 
+	bool operator==(const RubiksCube3dArray &r1) const { //equality operator
+		for (int i = 0; i < 6; i++) {
+			for (int j = 0; j < 3; j++) {
+				for (int k = 0; k < 3; k++) {
+					if (r1.cube[i][j][k] != cube[i][j][k]) return false;
+				}
+			}
+		}
+		return true;
+	}
+
+	RubiksCube3dArray &operator=(const RubiksCube3dArray &r1) { //assignmment operator
+		for (int i = 0; i < 6; i++) {
+			for (int j = 0; j < 3; j++) {
+				for (int k = 0; k < 3; k++) {
+					cube[i][j][k] = r1.cube[i][j][k];
+				}
+			}
+		}
+		return *this;
+	}
+};
+
+	struct Hash3d {
+		size_t operator()(const RubiksCube3dArray &r1) const { //hash Rule for cube
+			string str = "";
+			for (int i = 0; i < 6; i++) {
+				for (int j = 0; j < 3; j++) {
+					for (int k = 0; k < 3; k++) {
+						str += r1.cube[i][j][k];
+					}
+				}
+			}
+			return hash<string>()(str);
+	}
+
 };

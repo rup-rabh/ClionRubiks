@@ -67,6 +67,18 @@ build CMakeFiles/RubiksCubeClion.dir/Model/RubiksCube3dArray.cpp.obj: CXX_COMPIL
   OBJECT_DIR = CMakeFiles\RubiksCubeClion.dir
   OBJECT_FILE_DIR = CMakeFiles\RubiksCubeClion.dir\Model
 
+build CMakeFiles/RubiksCubeClion.dir/Model/RubiksCube1dArray.cpp.obj: CXX_COMPILER__RubiksCubeClion_unscanned_Debug C$:/Users/rupra/Downloads/Me/Learn/Dev/RubiksCube/RubiksCubeClion/Model/RubiksCube1dArray.cpp || cmake_object_order_depends_target_RubiksCubeClion
+  DEP_FILE = CMakeFiles\RubiksCubeClion.dir\Model\RubiksCube1dArray.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\RubiksCubeClion.dir
+  OBJECT_FILE_DIR = CMakeFiles\RubiksCubeClion.dir\Model
+
+build CMakeFiles/RubiksCubeClion.dir/Model/RubiksCubeBitboard.cpp.obj: CXX_COMPILER__RubiksCubeClion_unscanned_Debug C$:/Users/rupra/Downloads/Me/Learn/Dev/RubiksCube/RubiksCubeClion/Model/RubiksCubeBitboard.cpp || cmake_object_order_depends_target_RubiksCubeClion
+  DEP_FILE = CMakeFiles\RubiksCubeClion.dir\Model\RubiksCubeBitboard.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\RubiksCubeClion.dir
+  OBJECT_FILE_DIR = CMakeFiles\RubiksCubeClion.dir\Model
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target RubiksCubeClion
@@ -75,7 +87,7 @@ build CMakeFiles/RubiksCubeClion.dir/Model/RubiksCube3dArray.cpp.obj: CXX_COMPIL
 #############################################
 # Link the executable RubiksCubeClion.exe
 
-build RubiksCubeClion.exe: CXX_EXECUTABLE_LINKER__RubiksCubeClion_Debug CMakeFiles/RubiksCubeClion.dir/main.cpp.obj CMakeFiles/RubiksCubeClion.dir/Model/GenericRubiksCube.cpp.obj CMakeFiles/RubiksCubeClion.dir/Model/RubiksCube3dArray.cpp.obj
+build RubiksCubeClion.exe: CXX_EXECUTABLE_LINKER__RubiksCubeClion_Debug CMakeFiles/RubiksCubeClion.dir/main.cpp.obj CMakeFiles/RubiksCubeClion.dir/Model/GenericRubiksCube.cpp.obj CMakeFiles/RubiksCubeClion.dir/Model/RubiksCube3dArray.cpp.obj CMakeFiles/RubiksCubeClion.dir/Model/RubiksCube1dArray.cpp.obj CMakeFiles/RubiksCubeClion.dir/Model/RubiksCubeBitboard.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\RubiksCubeClion.dir
