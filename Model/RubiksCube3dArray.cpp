@@ -5,6 +5,7 @@
 
 //6X3X3 fXrXc
 #include "GenericRubiksCube.h"
+#include "iostream"
 class RubiksCube3dArray:public GenericRubiksCube{
 	private:
 
@@ -30,8 +31,12 @@ public:
 		for (int i = 0; i < 6; i++) {
 			for (int j = 0; j < 3; j++) {
 				for (int k = 0; k < 3; k++)
+				{
 					cube[i][j][k] = getColorLetter(COLOR(i));
+					// std::cout<<cube[i][j][k]<<" ";
+				}
 			}
+			// std::cout<< "\n";
 		}
 	}
 

@@ -153,7 +153,7 @@ GenericRubiksCube& GenericRubiksCube::invert(MOVE ind)
 
 void GenericRubiksCube::print() const
 {
-#####################top
+//#####################top
 	cout << "Rubik's Cube \n\n";
 	for (int row =0; row < 3; row++)
 	{
@@ -165,18 +165,20 @@ void GenericRubiksCube::print() const
 		cout<<"\n";
 	}
 	cout<<"\n";
-######################middle
-	constexpr FACE middle[] = {FACE::LEFT,FACE::FRONT,FACE::RIGHT,FACE::BACK}
+//######################middle
+	const vector<FACE> middle = {FACE::LEFT,FACE::FRONT,FACE::RIGHT,FACE::BACK};
 	for (unsigned int row =0 ; row<3;row++)
 	{
-		for(unsigned int col = 0; col < sizeof(middle)*3; col++)
+		for(unsigned int col = 0; col < middle.size()*3; col++)
 		{
-			int faceInd = col/3;
-			cout<<getColorLetter(getColor(middle[faceInd] , row, col))<< "\n";
+			unsigned int faceInd = col/3 ;
+			if(col%3==0)cout << " ";
+			cout<<getColorLetter(getColor(middle[faceInd] , row, col%3))<<" "; ///woah i forgot modulus and waster 1hr, wow
 		}
 		cout<< "\n";
 	}
-#########################middle
+	cout<<"\n";
+//#########################middle
 	for (int row =0; row < 3; row++)
 	{
 		for (unsigned int i = 0; i < 7; i++) cout << " ";
