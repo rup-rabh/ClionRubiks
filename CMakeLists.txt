@@ -4,5 +4,7 @@ project(RubiksCubeClion)
 set(CMAKE_CXX_STANDARD 17)
 
 add_executable(RubiksCubeClion main.cpp
-        GenericRubiksCube.cpp
-        GenericRubiksCube.h)
+        Model/GenericRubiksCube.cpp
+        Model/GenericRubiksCube.h
+        Model/RubiksCube3dArray.cpp
+        )

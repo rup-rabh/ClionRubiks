@@ -1,4 +1,5 @@
 #include <iostream>
+#include "Model/GenericRubiksCube.h"
 
 int main()
 {

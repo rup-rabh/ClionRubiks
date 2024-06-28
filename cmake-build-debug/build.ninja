@@ -55,11 +55,17 @@ build CMakeFiles/RubiksCubeClion.dir/main.cpp.obj: CXX_COMPILER__RubiksCubeClion
   OBJECT_DIR = CMakeFiles\RubiksCubeClion.dir
   OBJECT_FILE_DIR = CMakeFiles\RubiksCubeClion.dir
 
-build CMakeFiles/RubiksCubeClion.dir/GenericRubiksCube.cpp.obj: CXX_COMPILER__RubiksCubeClion_unscanned_Debug C$:/Users/rupra/Downloads/Me/Learn/Dev/RubiksCube/RubiksCubeClion/GenericRubiksCube.cpp || cmake_object_order_depends_target_RubiksCubeClion
-  DEP_FILE = CMakeFiles\RubiksCubeClion.dir\GenericRubiksCube.cpp.obj.d
+build CMakeFiles/RubiksCubeClion.dir/Model/GenericRubiksCube.cpp.obj: CXX_COMPILER__RubiksCubeClion_unscanned_Debug C$:/Users/rupra/Downloads/Me/Learn/Dev/RubiksCube/RubiksCubeClion/Model/GenericRubiksCube.cpp || cmake_object_order_depends_target_RubiksCubeClion
+  DEP_FILE = CMakeFiles\RubiksCubeClion.dir\Model\GenericRubiksCube.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\RubiksCubeClion.dir
-  OBJECT_FILE_DIR = CMakeFiles\RubiksCubeClion.dir
+  OBJECT_FILE_DIR = CMakeFiles\RubiksCubeClion.dir\Model
+
+build CMakeFiles/RubiksCubeClion.dir/Model/RubiksCube3dArray.cpp.obj: CXX_COMPILER__RubiksCubeClion_unscanned_Debug C$:/Users/rupra/Downloads/Me/Learn/Dev/RubiksCube/RubiksCubeClion/Model/RubiksCube3dArray.cpp || cmake_object_order_depends_target_RubiksCubeClion
+  DEP_FILE = CMakeFiles\RubiksCubeClion.dir\Model\RubiksCube3dArray.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\RubiksCubeClion.dir
+  OBJECT_FILE_DIR = CMakeFiles\RubiksCubeClion.dir\Model
 
 
 # =============================================================================
@@ -69,7 +75,7 @@ build CMakeFiles/RubiksCubeClion.dir/GenericRubiksCube.cpp.obj: CXX_COMPILER__Ru
 #############################################
 # Link the executable RubiksCubeClion.exe
 
-build RubiksCubeClion.exe: CXX_EXECUTABLE_LINKER__RubiksCubeClion_Debug CMakeFiles/RubiksCubeClion.dir/main.cpp.obj CMakeFiles/RubiksCubeClion.dir/GenericRubiksCube.cpp.obj
+build RubiksCubeClion.exe: CXX_EXECUTABLE_LINKER__RubiksCubeClion_Debug CMakeFiles/RubiksCubeClion.dir/main.cpp.obj CMakeFiles/RubiksCubeClion.dir/Model/GenericRubiksCube.cpp.obj CMakeFiles/RubiksCubeClion.dir/Model/RubiksCube3dArray.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\RubiksCubeClion.dir
